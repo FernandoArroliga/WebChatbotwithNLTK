@@ -3,9 +3,13 @@ from chat import get_response
 
 app = Flask(__name__)
 
-@app.get("/")
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/chatbot")
 def index_get():
-    return render_template("base.html")
+    return render_template("chatbot.html")
 
 @app.post("/predict")
 def predict():
