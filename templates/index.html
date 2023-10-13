@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home Page</title>
+    <title>ChatBot</title>
 
     <!-- Css Style -->
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
@@ -15,19 +17,20 @@
 </head>
 <body>
 
+    <!-- Text Container -->
     <div class="container">
-
+        <!-- header -->
         <div class="header">
-            <h1>Click Below</h1>
-            <h2>To Chat</h2>
+            <strong><h1>Click Below</h1></strong>
         </div>
-
+        <!-- button -->
         <div class="bottom">
-            <a href="{{ url_for('index_get') }}"><i class="fa-brands fa-rocketchat"></i></a>
+            <a href="{{ url_for('index_get')) }}" class="btn"><strong>To Chat!</strong></a>
         </div>
         
     </div>
 
+    <!-- Animated Background -->
     <div class="animatedBackground">
         <ul class="squares">
             <li></li>
