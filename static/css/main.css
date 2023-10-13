@@ -209,3 +209,26 @@
         background-color: rgb(148, 101, 101);
     }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .btn {
+        font-size: 1.2em;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 0.6rem 1.2rem;
+    }
+}
