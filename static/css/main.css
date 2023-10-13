@@ -52,10 +52,9 @@
     box-shadow: none;
 }
 
-
 /* Animated Background */
 .animatedBackground {
-    background-color: red;
+    background-color: black;
     width: 100%;
     height: 100vh;
 }
@@ -192,13 +191,13 @@
 /* Background Animation */
 @keyframes backgroundChange {
     0% {
-        background-color: red;
+        background-color: #DD9BCF;
     }
     20% {
-        background-color: blue;
+        background-color: #88df9c;
     }
     40% {
-        background-color: purple;
+        background-color: #FAD2CC;
     }
     60% {
         background-color: coral;
@@ -207,6 +206,6 @@
         background-color: black;
     }
     100% {
-        background-color: red;
+        background-color: rgb(148, 101, 101);
     }
 }
