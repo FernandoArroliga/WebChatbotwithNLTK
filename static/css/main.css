@@ -25,6 +25,33 @@
     color: #0ebac5;
 }
 
+/* Animated Letter */
+.header {
+    position: relative;
+}
+
+.header span {
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    animation-play-state: paused;
+}
+
+@keyframes animate {
+    0%, 40%, 100%
+    {
+        transform: translateY(0);
+    }
+    20%
+    {
+        transform: rotateY(-50px);
+    }
+}
+
 /* Button */
 
 .btn {
