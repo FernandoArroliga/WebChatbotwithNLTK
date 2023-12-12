@@ -1,12 +1,13 @@
-from flask import Flask, render_template, request, jsonify
-from chat import get_response
+from flask import render_template, request, jsonify
 
-app = Flask(__name__)
+from app import app
+from chatbot_utils.chat import get_response
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
+# ChatBot routes
 @app.route("/chatbot")
 def index_get():
     return render_template("chatbot.html")
@@ -19,6 +20,3 @@ def predict():
     message = {"answer": response}
     
     return jsonify(message)
-
-if __name__ == "__main__":
-    app.run()

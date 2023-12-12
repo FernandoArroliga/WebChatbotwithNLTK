@@ -1,14 +1,14 @@
 import json
 import numpy as np
-from nltk_utils import tokenize, stem, bag_of_words
+from chatbot_utils.nltk_utils import tokenize, stem, bag_of_words
 
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-from model import NeuralNet
+from chatbot_utils.model import NeuralNet
 
-with open("intents.json", "r") as f:
+with open("chatbot_utils/intents.json", "r") as f:
     intents = json.load(f)
     
 all_words = []
